@@ -1,0 +1,22 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Syspro",
+      "ects": 6,
+      "grade": 8.5
+    },
+    {
+      "id": 2,
+      "name": "Compilers",
+      "ects": 6,
+      "grade": 9
+    },
+    {
+      "id": 1,
+      "name": "Logiki sxediasi",
+      "ects": 8,
+      "grade": 8
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span class="title_elem">{{ title }}</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="cont">
+    <h1 class="header">SIGNUP</h1><br>
+    <form [formGroup]="signupForm" (ngSubmit)="submit()" class="example_form">
+        <mat-form-field class="comp">
+            <input matInput formControlName="email" type="email" placeholder="Email">
+        </mat-form-field>
+        <div *ngIf="submitted && signupForm.controls.email.errors">
+            <div *ngIf="signupForm.controls.email.errors.required" class="invalid-feedback">Required</div><br>
+        </div>
+  
+        <mat-form-field class="comp">
+            <input matInput formControlName="password" type="password" placeholder="Password">
+        </mat-form-field>
+        <div *ngIf="submitted && signupForm.controls.password.errors">
+            <div *ngIf="signupForm.controls.password.errors.required" class="invalid-feedback">Required</div><br>
+        </div>
+
+        <mat-form-field class="comp">
+            <input matInput formControlName="password2" type="password" placeholder="Confirm password">
+        </mat-form-field>
+        <div *ngIf="submitted && signupForm.controls.password2.errors">
+            <div *ngIf="signupForm.controls.password2.errors.required" class="invalid-feedback">Required</div><br>
+        </div>
+        <div *ngIf="submitted && pass_notmatched" class="invalid-feedback extra"><p>Passwords must match</p></div>
+
+        <br><br><div class="btns">
+            <button mat-raised-button color="primary" class="btn">Signup</button>
+            <button mat-button routerLink="/login" color="primary" class="btn">Login</button>
+        </div>
+        <div *ngIf="exists" class="error_message"><h4>Email already exists!</h4></div>
+    </form>
+</div>

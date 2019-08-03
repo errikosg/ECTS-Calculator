@@ -1,0 +1,67 @@
+/*for navbar*/
+.title_elem{
+    margin: auto;
+    font-size: 120%;
+}
+
+.cont {
+    display:block;
+    margin:auto;
+    margin-top:80px;
+    padding: 25px;
+    width: 50%;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    min-height: 400px;
+}
+
+.example_form{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    margin: auto;
+    color: #333;
+}
+
+.invalid-feedback {
+    font-size: 70%;
+    font-style:italic;
+    color: red;
+}
+
+input {
+    padding: 2px 10px;
+}
+
+button {
+    font-size: 105%;
+}
+
+.btn {
+    width: 100%;
+    min-height: 20px;
+    margin:auto;
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+}
+
+.error_message {
+    margin: auto;
+    margin-top: 50px;
+    color: #333;
+    font-style: italic;
+}
+
+.extra {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}

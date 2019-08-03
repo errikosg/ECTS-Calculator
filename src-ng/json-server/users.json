@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "email": "Errikos",
+	    "password": "1234",
+      "ects": 27,
+      "MO": 7.1,
+      "course_count": 3
+    },
+    {
+      "id": 1,
+      "email": "Kostas",
+	    "password": "1234",
+      "ects": 85,
+      "MO": 5.6,
+      "course_count": 5
+    }
+  ]
+}

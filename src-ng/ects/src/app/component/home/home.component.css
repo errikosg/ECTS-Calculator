@@ -1,0 +1,115 @@
+/*for navbar*/
+.title_elem{
+    margin: auto;
+    font-size: 120%;
+}
+
+.title {
+    flex: 1 1 auto;
+    margin-left: 50px;
+}
+
+.nav_list_item{
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.links {
+    margin: 0px 40px 0px 0px;
+    padding: 0px 10px;
+}
+
+.results {
+    display:block;
+    margin:auto;
+    margin-top:0px;
+    margin-bottom: 150px;
+    padding: 5px;
+    width: 60%;
+}
+
+.category {
+    display:block;
+    width:85%;
+    margin:auto;
+    margin-bottom:15px;
+    border: 1px solid #9999;
+    border-radius:6px;
+}
+
+.header {
+    color: #333;
+    text-align:center;
+}
+
+/*botnav*/
+.bot-nav {
+    position:fixed;
+    bottom:0;
+    right:0;
+    left: 0;
+    border-top: 1px solid #222;
+}
+.user-info {
+    background-color: #444;
+    color: white;
+    padding: 12px 20px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.stats {
+    padding: 12px 20px;
+    background-color: #eee;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.progress {
+    height: 15px;
+}
+
+mat-progress-bar {
+    height: 15px;
+}
+
+.user-info > span, .stats > span {
+    text-align: center
+}
+
+/*side-nav*/
+.side-nav {
+    position: fixed;
+    left:0;
+    top:25%;
+    width:15%;
+    border: 2px solid #444;
+    border-radius: 8px;
+    background-color: #f6f6f6
+}
+
+.side-nav > h4{
+    margin-bottom: 2px;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+}
+
+.head_links{
+    cursor: pointer;
+    font-size: 105%;
+    color: #333;
+}
+
+.head_links:hover {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+    .side-nav {
+      display: none;
+    }
+  }

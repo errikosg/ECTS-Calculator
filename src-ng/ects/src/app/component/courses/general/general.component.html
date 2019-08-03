@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>ECTs</th>
+        <th>Grade</th>
+    </tr>
+    <tr *ngFor="let course of display_courses;">
+        <td>{{course.name}}</td>
+        <td>{{course.ects}}</td>
+        <td><div class="cont"><mat-form-field><input matInput type="text" placeholder="Grade" [(ngModel)]="course.grade" (keyup)="changeEvent(course)"></mat-form-field><i [className]="course.grade>=5 && course.grade<=10 ? 'check material-icons' : 'not-check'" class="material-icons">done</i></div></td>
+    </tr>
+</table>
