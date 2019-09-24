@@ -3,5 +3,5 @@ Application for keeping track of courses, grades, ECTS ect. It is intended for u
 
 Technologies: Angular 8.0.3 / NodeJS v10.16.0
 
-Homepage:
+Homepage:<br><br>
 ![homepage](https://github.com/errikosg/ECTS-Calculator/blob/master/img/homepage.png)
