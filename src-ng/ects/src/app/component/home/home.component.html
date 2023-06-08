@@ -1,3 +1,4 @@
+<div>
 <mat-toolbar color="primary">
 
     <mat-toolbar-row>
@@ -14,10 +15,66 @@
     </mat-toolbar-row>
 </mat-toolbar>
 
+<div class="results">
+    <h3 class="header" id="ob">ΥΠΟΧΡΕΩΤΙΚΑ ΜΑΘΗΜΑΤΑ</h3>
+    <div class="category">
+        <app-course [displayCourses]="obligatoryCourses"></app-course>
+    </div>
+    <h3 class="header" id="gen">ΜΑΘΗΜΑΤΑ ΓΕΝΙΚΗΣ ΠΑΙΔΕΙΑΣ</h3>
+    <div class="category">
+        <app-course [displayCourses]="generalCourses"></app-course>
+    </div>
+    <h3 class="header" id="lab">ΑΥΤΟΤΕΛΗ ΕΡΓΑΣΤΗΡΙΑ</h3>
+    <div class="category">
+        <app-course [displayCourses]="labCourses"></app-course>
+    </div>
+    <h3 class="header" id="el">ΠΡΟΑΙΡΕΤΙΚΑ ΜΑΘΗΜΑΤΑ</h3>
+    <div class="category">
+        <app-course [displayCourses]="choiceCourses"></app-course>
+    </div>
+    <h3 class="header" id="bc">ΚΑΤ'ΕΠΙΛΟΓΗΝ ΥΠΟΧΡΕΩΤΙΚΑ ΜΑΘΗΜΑΤΑ</h3>
+    <div class="category">
+        <app-course [displayCourses]="electiveCourses"></app-course>
+    </div>
+    <h3 class="header" id="oth">ΑΛΛΑ ΜΑΘΗΜΑΤΑ</h3>
+    <div class="category">
+        <app-course [displayCourses]="otherCourses"></app-course>
+    </div>
+</div>
+
+<div class="side-nav">
+    <h4>Go To:</h4>
+    <mat-list>
+        <mat-list-item><span class="head_links" (click)="scroll('ob')" >1. Υποχρεωτικά</span></mat-list-item>
+        <mat-list-item><span class="head_links" (click)="scroll('gen')">2. Γενικής Παιδείας</span></mat-list-item>
+        <mat-list-item><span class="head_links" (click)="scroll('lab')">3. Εργαστήρια</span></mat-list-item>
+        <mat-list-item><span class="head_links" (click)="scroll('el')">4. Προαιρετικά</span></mat-list-item>
+        <mat-list-item><span class="head_links" (click)="scroll('bc')">5. Κατ'επιλογήν υποχρεωτικά</span></mat-list-item>
+        <mat-list-item><span class="head_links" (click)="scroll('oth')">6. Άλλα</span></mat-list-item>
+    </mat-list>
+</div>
+
+<div class="bot-nav">
+    <div class="user-info">
+        <span>Αριθμός μαθημάτων</span>
+        <span>ECTs</span>
+        <span>Συνολικός Μ.Ο.</span>
+    </div>
+    <div class="stats">
+        <span>{{totalCourses}}</span>
+        <span>{{totalEcts}}</span>
+        <span>{{totalGrade | number:'1.2-2'}}</span>
+    </div>
+    <div class="progress">
+        <mat-progress-bar [value]="(this.totalEcts/240)*100"></mat-progress-bar>
+    </div>
+</div>
+</div>
+
 <!--div.results>h3.header{HEAD}+div.category*6>mat-nav-list>mat-list-item.item-->
 <!--div.results>h3.header{HEAD}+div.category*6>table>ng-container*3>th+td-->
 
-<div class="results">
+<!--<div class="results">
     <h3 class="header" id="ob">ΥΠΟΧΡΕΩΤΙΚΑ ΜΑΘΗΜΑΤΑ</h3>
     <div class="category">
         <app-obligatory></app-obligatory>
@@ -70,4 +127,4 @@
     <div class="progress">
         <mat-progress-bar [value]="(this.total_ects/240)*100"></mat-progress-bar>
     </div>
-</div>
+</div>-->

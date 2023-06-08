@@ -9,12 +9,7 @@ import { LoginComponent } from './component/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './component/home/home.component';
 import { SignupComponent } from './component/signup/signup.component';
-import { ObligatoryComponent } from './component/courses/obligatory/obligatory.component';
-import { GeneralComponent } from './component/courses/general/general.component';
-import { LabsComponent } from './component/courses/labs/labs.component';
-import { ElectiveComponent } from './component/courses/elective/elective.component';
-import { BychoiceComponent } from './component/courses/bychoice/bychoice.component';
-import { OtherComponent } from './component/courses/other/other.component';
+import { CourseComponent } from './component/course/course.component';
 
 
 @NgModule({
@@ -23,12 +18,7 @@ import { OtherComponent } from './component/courses/other/other.component';
     LoginComponent,
     HomeComponent,
     SignupComponent,
-    ObligatoryComponent,
-    GeneralComponent,
-    LabsComponent,
-    ElectiveComponent,
-    BychoiceComponent,
-    OtherComponent
+    CourseComponent
   ],
   imports: [
     BrowserModule,
